@@ -1,20 +1,34 @@
 body {
 	width: 100%;
 	height: 100vh;
-	background: hsl(191deg 44% 57%);
 	font-family: tahoma;
+	background-image: linear-gradient(to bottom right, #352f8b, #ffffff);
+	/* background-color: #5cc1b7; */
 	color: #494747;
 	margin: 0;
 	padding: 0;
 }
 
+#wrapper {
+	width: 100%;
+	height: 100%;
+}
+
 #container {
 	position: relative;
 	width: 95%;
-	background: #141e2c;
 	margin: 0 auto;
 	padding: 20px;
 	box-sizing: border-box;
+}
+
+#To-Do-List {
+	position: relative;
+	width: 95%;
+	margin: 0 auto;
+	padding: 20px;
+	box-sizing: border-box;
+	background: #141e2c;
 }
 
 input {
@@ -28,16 +42,20 @@ input {
 	outline: none;
 }
 
-button {
+#add-item {
 	padding: 20px;
 	width: 25%;
 	float: center;
-	background: #9ca1b9;
+	background: #5cc1b7;
 	border: 0;
 	box-sizing: border-box;
 	color: #fff;
 	cursor: pointer;
 	font-size: 20px;
+}
+
+#add-item:hover {
+	background: #34a499;
 }
 
 button:focus {
@@ -57,7 +75,7 @@ li:not(.nav-list li) {
 
 li:hover:not(.nav-list li) {
 	text-decoration: line-through;
-	color: red;
+	color: rgb(176, 68, 68);
 	position: relative;
 	left: 3px;
 	bottom: 3px;
@@ -88,9 +106,50 @@ li:hover:not(.nav-list li) {
 	text-decoration: none;
 	color: white;
 	font-size: 25px;
-	margin-left: 15px;
+	margin-left: 25px;
 }
 
+#Notes {
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+#Notes textarea {
+	min-width: 80%;
+	min-height: 500px;
+	outline: none;
+	font-size: 30px;
+}
+
+.font-size {
+	height: 40px;
+	width: 80px;
+	border-radius: 25px;
+	border: none;
+}
+
+.font-buttons {
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+}
+
+#reduce-font {
+	background-color: rgb(186, 66, 66);
+}
+
+#increase-font {
+	background-color: rgb(55, 179, 55);
+}
+
+#reduce-font:hover {
+	background-color: rgb(177, 48, 48);
+}
+
+#increase-font:hover {
+	background-color: rgb(29, 158, 29);
+}
 
 @media only screen and (max-width: 1100px) {
 input {
