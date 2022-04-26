@@ -11,27 +11,43 @@
     <script src="./script.js"></script>
   </head>
   <body>
+    <div id="Home"></div>
+    <div id="navbar">
+      <div class="left-side">
+        <div class="links">
+          <a href="#Home">Home</a>
+          <a href="#To-Do-List">To-Do List</a>
+          <a href="#Notes">Notes</a>
+          <a href="#Finance-Manager">Finance Manager</a>
+        </div>
+      </div>
+      <div class="right-side"></div>
+    </div>
     <div id="container">
-      <div>
-        <form>
-          <div>
-            <input
-              id="new-item"
-              type="text"
-              placeholder="Add new item..."
-              autocomplete="off"
-              required
-            />
-          </div>
-          <div>
-            <button id="add-item" type="submit">Add Item</button>
-          </div>
-        </form>
-      </div>
+      <div id="To-Do-List">
+        <div>
+          <form>
+            <div>
+              <input
+                id="new-item"
+                type="text"
+                placeholder="Add new item..."
+                autocomplete="off"
+                required
+              />
+            </div>
+            <div>
+              <button id="add-item" type="submit">Add Item</button>
+            </div>
+          </form>
+        </div>
 
-      <div>
-        <ol id="todo-list"></ol>
+        <div>
+          <ol id="todo-list"></ol>
+        </div>
       </div>
+      <div id="Notes"></div>
+      <div id="Finance-Manager"></div>
     </div>
   </body>
 </html>
