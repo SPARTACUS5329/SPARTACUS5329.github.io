@@ -1,0 +1,62 @@
+#notes-container {
+    position: relative;
+    width: 95%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+#Notes {
+    position: relative;
+    width: 95%;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    background-color: hsl(245, 38%, 13%);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#Notes textarea {
+    width: 80%;
+    height: 500px;
+    outline: none;
+    font-size: 30px;
+    border-radius: 30px;
+    background-color: hsl(305, 38%, 13%);
+    color: white;
+}
+
+.font-size {
+    height: 40px;
+    width: 80px;
+    border-radius: 25px;
+    border: none;
+    color: white;
+    font-size: 35px;
+}
+
+.font-buttons {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+#reduce-font {
+    background-color: rgb(186, 66, 66);
+}
+
+#increase-font {
+    background-color: rgb(55, 179, 55);
+    
+}
+
+#reduce-font:hover {
+    background-color: rgb(177, 48, 48);
+}
+
+#increase-font:hover {
+    background-color: rgb(29, 158, 29);
+}
