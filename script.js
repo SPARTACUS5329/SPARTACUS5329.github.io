@@ -1,5 +1,4 @@
 $(document).ready(function () {
-  // console.log((document.querySelector("textarea").style.fontSize = "10000px"));
   var fontSize = 30;
   $("form").on("submit", function () {
     var input = $("#new-item");
