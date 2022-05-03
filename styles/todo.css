@@ -1,13 +1,8 @@
 #To-Do-List {
-    height: 45vh;
+    height: 41vh;
     width: 100%;
     background-color: hsl(215, 38%, 13%);
     text-align: center;
-}
-
-h1 {
-    color: white;
-    font-size: 20px;
 }
 
 form {

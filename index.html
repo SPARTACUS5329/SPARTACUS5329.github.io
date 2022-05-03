@@ -29,7 +29,7 @@
     />
     <link rel="stylesheet" href="styles/timer-container.css" type="text/css" />
     <link rel="stylesheet" href="styles/todo.css" type="text/css" />
-    <!-- <link rel="stylesheet" href="notes.css" type="text/css" /> -->
+    <link rel="stylesheet" href="styles/notes.css" type="text/css" />
 
     <link rel="icon" href="favicon.png" />
     <script src="./script.js"></script>
@@ -81,35 +81,25 @@
       </div>
       <div class="row row-3">
         <div class="calculator-container">Calculator</div>
-        <div class="notes-container">Notes</div>
+        <div class="notes-container">
+          <div id="Notes">
+            <h1>Notes</h1>
+            <div class="font-buttons">
+              <div class="elements">
+                <button id="reduce-font" class="font-size">
+                  a↓
+                </button>
+                <button id="increase-font" class="font-size">
+                  A↑
+                </button>
+              </div>
+            </div>
+          <textarea name="notes" id="#notes" cols="30" rows="10"></textarea>
+          </div>
+        </div>
         <div class="budget-container">Budget</div>
       </div>
 
-      <!-- <div id="todo-container">
-        <div id="To-Do-List">
-          <h1>To-Do List</h1>
-          <div>
-            <form>
-              <div>
-                <input
-                  id="new-item"
-                  type="text"
-                  placeholder="Add new item..."
-                  autocomplete="off"
-                  required
-                />
-              </div>
-              <div>
-                <button id="add-item" type="submit">Add Item</button>
-              </div>
-            </form>
-          </div>
-
-          <div>
-            <ol id="todo-list"></ol>
-          </div>
-        </div> 
-      </div> -->
       <!-- <div id="notes-container">
         <div id="Notes">
           <div class="font-buttons">
