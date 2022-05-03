@@ -4,7 +4,7 @@ This is the repository for the application for E-Cell Manager WMO 2022-2023 by A
 
 <h2>Content</h2>
 
-This page consists of:
+This page consists functionality of:
 
 1. To-Do List
 2. Notes
@@ -20,6 +20,6 @@ This is for typed notes (or any text) where font size can be increased or decrea
 <h1>Negatives</h1>
 
 1. There is no database so after a simple reload, all of the data will be lost
-2. Ideally there would be two different routes for To-Do List and Notes i.e. `/todo` and `/notes`
+2. Ideally there would be different routes for each component
 3. Because of no framework used, storing states is difficult
-4. In the To-Do List, some characters are not allowed in the `id` of a div hence they become impossible to delete. This can be solved by using
+4. In the To-Do List, some characters are not allowed in the `id` of a div hence they become impossible to delete. This can be solved by using a framework like React.
