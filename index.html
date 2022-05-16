@@ -53,7 +53,7 @@
       <div class="row row-2">
         <div class="todo-container">
           <div id="To-Do-List">
-            <h1>To-Do List</h1>
+            <h1 id="todo-h1">To-Do List</h1>
             <div class="elements">
               <form>
                 <div>
@@ -76,14 +76,52 @@
             </div>
           </div>
         </div>
-        <div class="email-container">Emails</div>
+        <div class="email-container">
+          <div id="Emails">
+            <div class="left-side">
+              <button>Compose</button>
+              <div id="email-toolbar">
+                <div>Inbox</div>
+                <div>Sent</div>
+                <div>Trash</div>
+                <div>Spam</div>
+                <div>Other</div>
+              </div>
+            </div>
+            <div class="right-side">
+              <input type="text" placeholder="Search..."/>
+              <div id="email-list">
+                <div class="email-preview">Email0</div>
+                <div class="email-preview">Email1</div>
+                <div class="email-preview">Email2</div>
+                <div class="email-preview">Email3</div>
+                <div class="email-preview">Email4</div>
+                <div class="email-preview">Email5</div>
+                <div class="email-preview">Email6</div>
+                <div class="email-preview">Email7</div>
+                <div class="email-preview">Email8</div>
+                <div class="email-preview">Email9</div>
+                <div class="email-preview">Email10</div>
+                <div class="email-preview">Email11</div>
+                <div class="email-preview">Email12</div>
+                <div class="email-preview">Email13</div>
+                <div class="email-preview">Email14</div>
+                <div class="email-preview">Email15</div>
+                <div class="email-preview">Email16</div>
+                <div class="email-preview">Email17</div>
+                <div class="email-preview">Email18</div>
+                <div class="email-preview" style="margin-bottom: 10px;">Email19</div>
+              </div>
+            </div>
+          </div>
+        </div>
         <div class="calendar-container">Calendar</div>
       </div>
       <div class="row row-3">
         <div class="calculator-container">Calculator</div>
         <div class="notes-container">
           <div id="Notes">
-            <h1>Notes</h1>
+            <h1 id="notes-h1">Notes</h1>
             <div class="font-buttons">
               <div class="elements">
                 <button id="reduce-font" class="font-size">
@@ -99,20 +137,5 @@
         </div>
         <div class="budget-container">Budget</div>
       </div>
-
-      <!-- <div id="notes-container">
-        <div id="Notes">
-          <div class="font-buttons">
-            <h1>Notes</h1>
-            <button id="reduce-font" class="font-size">
-              a↓
-            </button>
-            <button id="increase-font" class="font-size">
-              A↑
-            </button>
-          </div>
-          <textarea name="notes" id="#notes" cols="30" rows="10"></textarea>
-        </div>
-      </div> -->
   </body>
 </html>

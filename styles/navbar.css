@@ -1,19 +1,19 @@
 #navbar {
-    background-image: linear-gradient(to right, hsl(275, 38%, 13%), #e1c0c0);
+    background-color: rgb(67, 116, 67);
     width: 100%;
     height: 8vh;
     font-family: Arial, Helvetica, sans-serif;
     display: flex;
 }
 
-.left-side {
+.left-side:not(#Emails .left-side) {
     flex: 50%;
     display: flex;
     align-items: center;
     justify-content: left;
 }
 
-.right-side {
+.right-side:not(#Emails .right-side) {
     flex: 50%;
 }
 
