@@ -4,138 +4,26 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <title>E-Cell Manager App 2022-2023</title>
-    <link rel="stylesheet" href="styles/styles.css" type="text/css" />
-    <link rel="stylesheet" href="styles/navbar.css" type="text/css" />
-    <link rel="stylesheet" href="styles/todo-container.css" type="text/css" />
-    <link rel="stylesheet" href="styles/notes-container.css" type="text/css" />
-    <link
-      rel="stylesheet"
-      href="styles/calculator-container.css"
-      type="text/css"
-    />
-    <link
-      rel="stylesheet"
-      href="styles/calendar-container.css"
-      type="text/css"
-    />
-    <link rel="stylesheet" href="styles/email-container.css" type="text/css" />
-    <link rel="stylesheet" href="styles/budget-container.css" type="text/css" />
-    <link
-      rel="stylesheet"
-      href="styles/reminders-container.css"
-      type="text/css"
-    />
-    <link rel="stylesheet" href="styles/timer-container.css" type="text/css" />
-    <link rel="stylesheet" href="styles/todo.css" type="text/css" />
-    <link rel="stylesheet" href="styles/notes.css" type="text/css" />
-
-    <link rel="icon" href="favicon.png" />
-    <script src="./script.js"></script>
+    <title>Proj0</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
   </head>
   <body>
-    <div id="navbar">
-      <div class="left-side">
-        <div class="links">
-          <a href="#">Home</a>
-          <a href="#">XYZ</a>
-          <a href="#">ABC</a>
-        </div>
-      </div>
-      <div class="right-side"></div>
+    <div class="row row-1">
+      <div class="fact-container"><div id="fact-1" class="fact"></div></div>
+      <div class="fact-container"><div id="fact-2" class="fact"></div></div>
     </div>
-    <div id="wrapper">
-      <div class="row row-1">
-        <div class="timer-container">Timer</div>
-        <div class="reminders-container">Reminders</div>
-      </div>
-      <div class="row row-2">
-        <div class="todo-container">
-          <div id="To-Do-List">
-            <h1 id="todo-h1">To-Do List</h1>
-            <div class="elements">
-              <form>
-                <div>
-                  <input
-                    id="new-item"
-                    type="text"
-                    placeholder="Add new item..."
-                    autocomplete="off"
-                    required
-                  />
-                </div>
-                <div>
-                  <button id="add-item" type="submit">Add Item</button>
-                </div>
-              </form>
-            </div>
 
-            <div class="list-items">
-              <ol id="todo-list"></ol>
-            </div>
-          </div>
-        </div>
-        <div class="email-container">
-          <div id="Emails">
-            <div class="left-side">
-              <button>Compose</button>
-              <div id="email-toolbar">
-                <div>Inbox</div>
-                <div>Sent</div>
-                <div>Trash</div>
-                <div>Spam</div>
-                <div>Other</div>
-              </div>
-            </div>
-            <div class="right-side">
-              <input type="text" placeholder="Search..."/>
-              <div id="email-list">
-                <div class="email-preview">Email0</div>
-                <div class="email-preview">Email1</div>
-                <div class="email-preview">Email2</div>
-                <div class="email-preview">Email3</div>
-                <div class="email-preview">Email4</div>
-                <div class="email-preview">Email5</div>
-                <div class="email-preview">Email6</div>
-                <div class="email-preview">Email7</div>
-                <div class="email-preview">Email8</div>
-                <div class="email-preview">Email9</div>
-                <div class="email-preview">Email10</div>
-                <div class="email-preview">Email11</div>
-                <div class="email-preview">Email12</div>
-                <div class="email-preview">Email13</div>
-                <div class="email-preview">Email14</div>
-                <div class="email-preview">Email15</div>
-                <div class="email-preview">Email16</div>
-                <div class="email-preview">Email17</div>
-                <div class="email-preview">Email18</div>
-                <div class="email-preview" style="margin-bottom: 10px;">Email19</div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="calendar-container">Calendar</div>
-      </div>
-      <div class="row row-3">
-        <div class="calculator-container">Calculator</div>
-        <div class="notes-container">
-          <div id="Notes">
-            <h1 id="notes-h1">Notes</h1>
-            <div class="font-buttons">
-              <div class="elements">
-                <button id="reduce-font" class="font-size">
-                  a↓
-                </button>
-                <button id="increase-font" class="font-size">
-                  A↑
-                </button>
-              </div>
-            </div>
-          <textarea name="notes" id="#notes" cols="30" rows="10"></textarea>
-          </div>
-        </div>
-        <div class="budget-container">Budget</div>
-      </div>
+    <div class="row row-2">
+      <div class="fact-container"><div id="fact-3" class="fact"></div></div>
+      <div class="fact-container"><div id="fact-4" class="fact"></div></div>
+      <div class="fact-container"><div id="fact-5" class="fact"></div></div>
+    </div>
+    <div id="error-text"></div>
   </body>
 </html>
