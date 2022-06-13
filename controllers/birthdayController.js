@@ -1,3 +1,5 @@
+const moment = require("moment");
+moment().format();
 const dateToDays = require("../utils/dateToDays");
 
 module.exports = (app) => {
@@ -8,9 +10,31 @@ module.exports = (app) => {
   });
 
   app.get("/closest-birthday", (req, response) => {
-    const { date } = req.query;
+    let { date } = req.query;
+    const dateArray = [
+      "02/12/1923",
+      "05/08/2023",
+      "03/07/2023",
+      "17/12/1931",
+      "17/12/1931",
+      "01/01/2102",
+    ];
+
+    // let dateObj = moment(date, "YYYY-MM-DD");
     const days = dateToDays(date);
-    response.send({ days }).status(200);
+    let min = 365;
+    let temp;
+    let difference;
+    let minDate;
+    dateArray.forEach((date) => {
+      temp = dateToDays(date);
+      difference = Math.min(Math.abs(temp - days), Math.abs(temp - days + 365));
+      if (difference < min) {
+        min = difference;
+        minDate = date;
+      }
+    });
+    response.send({ date, minDate, days: dateToDays(minDate) }).status(200);
   });
 
   app.get("/birthday", (req, response) => {});
