@@ -14,6 +14,7 @@ birthdayController(app);
 app.use("*", (req, response) => {
   response.status(404).json({ error: "not found" });
 });
+
 mongoose
   .connect(dbURL, {
     useNewUrlParser: true,
@@ -27,6 +28,3 @@ mongoose
   .catch((err) => {
     console.log(err);
   });
-
-// app.listen(PORT);
-// console.log(`Listening to port ${PORT}`);
