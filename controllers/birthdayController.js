@@ -10,10 +10,12 @@ module.exports = (app) => {
         throw Error("Inavlid date");
       }
       const user = await User.create({ username, birthday });
-      response.send({ username, birthday }).status(200);
+      response.status(200);
+      response.send({ username, birthday });
     } catch (error) {
       console.error(error.message);
-      response.send({ error: error.message }).status(500);
+      response.status(500);
+      response.send({ error: error.message });
     }
   });
 
@@ -26,10 +28,12 @@ module.exports = (app) => {
       const userList = await User.find({});
 
       const { closestDate, days } = minDate(userList, date);
-      response.send({ date, closestDate, days }).status(200);
+      response.status(200);
+      response.send({ date, closestDate, days });
     } catch (error) {
       console.error(error.message);
-      response.send({ error: error.message }).status(500);
+      response.status(500);
+      response.send({ error: error.message });
     }
   });
 
@@ -40,10 +44,12 @@ module.exports = (app) => {
       if (!user) {
         throw Error("This user does not exist");
       }
-      response.send({ username, birthday: user.birthday }).status(200);
+      response.status(200);
+      response.send({ username, birthday: user.birthday });
     } catch (error) {
       console.error(error.message);
-      response.send({ error: error.message }).status(500);
+      response.status(500);
+      response.send({ error: error.message });
     }
   });
 
@@ -60,10 +66,12 @@ module.exports = (app) => {
       if (!user) {
         throw Error("This user does not exist");
       }
-      response.send({ user }).status(200);
+      response.status(200);
+      response.send({ user });
     } catch (error) {
       console.error(error.message);
-      response.send({ error: error.message }).status(500);
+      response.status(500);
+      response.send({ error: error.message });
     }
   });
 
@@ -81,10 +89,12 @@ module.exports = (app) => {
         throw Error("Correct birthday not sent");
       }
       await User.deleteOne(user);
-      response.send({ username, birthday }).status(200);
+      response.status(200);
+      response.send({ username, birthday });
     } catch (error) {
       console.error(error.message);
-      response.send({ error: error.message }).status(500);
+      response.status(500);
+      response.send({ error: error.message });
     }
   });
 };
