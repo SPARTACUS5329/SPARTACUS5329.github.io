@@ -1,0 +1,7 @@
+.Home .hero-list{
+    display: flex;
+    justify-content: center;
+}
+.Home .hero {
+    margin-right: 10px;
+}

@@ -1,0 +1,39 @@
+.App {
+    background-color: rgb(58, 32, 0);
+    color: white;
+    min-height: 100vh;
+}
+
+.HeroItem:hover {
+    color: bisque;
+    border: 1px solid bisque;
+    position: relative;
+    left: 3px;
+    bottom: 3px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+.HeroItemContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.MiniHeroDetailsContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.HeroDetailsContainer input {
+    outline: none;
+    border-radius: 30px;
+    font-size: 15px;
+    padding: 13px;
+    text-align: center;
+}
+
+.MiniHeroDetailsContainer button:active {
+    position: relative;
+    top: 5px;
+    left: 5px
+}
