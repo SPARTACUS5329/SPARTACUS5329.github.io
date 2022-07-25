@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import { useParams } from "react-router";
 
 const HeroDetails = ({ HeroList }) => {
@@ -7,6 +8,7 @@ const HeroDetails = ({ HeroList }) => {
   const [power, setPower] = useState(0);
   const [heroList, setHeroList] = useState(HeroList);
   const [submitState, setSubmitState] = useState(0);
+  const navigate = useNavigate();
 
   useEffect(() => {
     console.log("useEffect fired");
@@ -100,6 +102,28 @@ const HeroDetails = ({ HeroList }) => {
           }}
         >
           Save {!submitState || "✔︎"}
+        </button>
+      </div>
+      <div className="MiniHeroDetailsContainer">
+        <button
+          style={{
+            marginLeft: "10px",
+            width: "300px",
+            fontSize: "15px",
+            background: "#ffe1bd",
+            color: "#000000",
+            fontWeight: "bolder",
+            borderRadius: "30px",
+            padding: "13px",
+            marginTop: "10px",
+            border: "4px solid black",
+          }}
+          onClick={(e) => {
+            navigate(-1);
+            e.preventDefault();
+          }}
+        >
+          Back
         </button>
       </div>
     </div>
